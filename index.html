@@ -4,14 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New-Project</title>
+    <title>Articles exercise retry</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <main class="main-content">
+      <div class="global-wrapper container">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-content">
 
+            <h2 class="hero-heading">
+              Sayohat haqidagi eng qiziq
+              bloglarni kuzatib boring.
+            </h2>
+
+            <a class="hero-btn" href="index.html">
+              <span class="hero-btn-inner">
+                <span class="hero-btn-text">top bloglar</span>
+              </span>
+            </a>
+
+          </div>
+        </section>
+        <!-- LATEST VIDEOS -->
+        <section class="latest-videos">
+          <h2 class="latest-videos-heading">
+            Eng so’nggi videolar
+          </h2>
+          <hr class="latest-videos-divider">
+          <ul class="latest-videos-list">
+            <!-- LATEST VIDEOS ITEM -->
+            <li class="latest-videos-item">
+              <div class="item-videos-latest">
+                <img class="item-videos-latest-img" 
+                src="img/mini-house.jpg" 
+                alt="mini-house"
+                width="160" height="90" 
+                srcset="img/mini-house.jpg 1x , img/mini-house@2x.jpg 2x">
+
+                <div class="item-videos-latest-info">
+                  <h3 class="item-videos-latest-title">
+                    <a class="item-videos-latest-link" href="#">O’rmonda uchburchaksimon uy qurdik</a>
+                  </h3>
+                  <div class="item-videos-latest-meta">
+                    <date class="item-videos-latest-meta-item item-videos-latest-published-at"
+                    datetime="2021-09-23">
+                      1 hafta oldin
+                    </date>
+                    <div class="item-videos-latest-meta-item item-videos-latest-views">
+                      873 ming
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- LATEST VIDEOS ITEM -->
+            <li class="latest-videos-item">
+              <div class="item-videos-latest">
+                <img class="item-videos-latest-img" 
+                src="img/lake.jpg" 
+                alt="mini-house"
+                width="160" height="90" 
+                srcset="img/lake.jpg 1x , img/lake@2x.jpg 2x">
+
+                <div class="item-videos-latest-info">
+                  <h3 class="item-videos-latest-title">
+                    <a class="item-videos-latest-link" href="#">Sibirliklarning qoldirib ketilgan uychalari</a>
+                  </h3>
+                  <div class="item-videos-latest-meta">
+                    <date class="item-videos-latest-meta-item item-videos-latest-published-at"
+                    datetime="2021-09-18">
+                    3 hafta oldin
+                    </date>
+                    <div class="item-videos-latest-meta-item item-videos-latest-views">
+                      819 ming
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- LATEST VIDEOS ITEM -->
+            <li class="latest-videos-item">
+              <div class="item-videos-latest">
+                <img class="item-videos-latest-img" 
+                src="img/forest.jpg" 
+                alt="mini-house"
+                width="160" height="90" 
+                srcset="img/forest.jpg 1x , img/forest@2x.jpg 2x">
+
+                <div class="item-videos-latest-info">
+                  <h3 class="item-videos-latest-title">
+                    <a class="item-videos-latest-link" href="#">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
+                  </h3>
+                  <div class="item-videos-latest-meta">
+                    <date class="item-videos-latest-meta-item item-videos-latest-published-at"
+                    datetime="2021-08-13">
+                      1 oy oldin
+                    </date>
+                    <div class="item-videos-latest-meta-item item-videos-latest-views">
+                      3.9 million
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="load-more-btn">Yana yuklash</button>
+        </section>
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

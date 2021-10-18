@@ -17,10 +17,10 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial" , sans-serif;
+  font-family: "Roboto Condensed" , "Arial" , sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #222;
   color: #222;
 }
 
@@ -32,14 +32,236 @@ img {
 /* CONTAINER */
 .container {
   max-width: 100%;
-  width: 1200px;
+  width: 1300px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+/* HERO */
+.global-wrapper{
+  flex-grow: 1;
+  display: flex;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 600px;
+  background-image: url(../img/left-bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+}
+
+.hero-content{
+  width: 285px;
+}
+
+.hero-heading{
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero-btn{
+  display: block;
+  width: 166px;
+  padding: 12px 24px;
+  text-decoration: none;
+  background-color: #1E90FF;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-btn-inner{
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn-inner::before{
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/star-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+  margin-right: 12px;
+}
+
+.hero-btn:hover{
+  opacity: 0.8;
+}
+
+.hero-btn:active{
+  opacity: 0.6;
+}
+
+
+/* LATEST VIDOES */
+.latest-videos {
+  padding: 54px;
+  background-color: #fff;
+}
+
+.latest-videos-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+}
+
+.latest-videos-divider {
+  border: none;
+  height: 1px;
+  background-color: #999;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.latest-videos-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.latest-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+/* ITEM LATEST VIDEOS */
+.item-videos-latest {
+  display: flex;
+}
+
+.item-videos-latest-img {
+  width: 160px;
+  height: 90px;
+  border-radius: 4px;
+}
+
+.item-videos-latest-info {
+  padding: 16px 9px 10px 16px;
+}
+
+.item-videos-latest-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 22px;
+}
+
+.item-videos-latest-link{
+  text-decoration: none;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 2px;
+  color:#222;
+}
+
+.item-videos-latest-link:hover{
+  color: #1E90FF;
+}
+
+.item-videos-latest-link:active{
+  opacity: 0.6;
+}
+
+.item-videos-latest-meta {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  color: #888;
+  align-items: center;
+}
+
+.item-videos-latest-meta-item {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.item-videos-latest-meta-item::before{
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 5px;
+  content: "";
+}
+
+.item-videos-latest-published-at {
+  display: flex;
+  align-items: center;
+}
+
+.item-videos-latest-published-at::before{
+  background-image: url(../img/time-icon.svg);
+}
+
+.item-videos-latest-views {
+  display: flex;
+  align-items: center;
+}
+
+.item-videos-latest-views::before{
+  background-image: url(../img/eye-icon.svg);
+}
+
+.load-more-btn{
+  width: 100%;
+  background-color:#1E90FF;
+  color:#fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto Condensed" , "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+}
+
+.load-more-btn:hover{
+  opacity: 0.8;
+}
+
+.load-more-btn:active{
+  opacity: 0.6;
 }
